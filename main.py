@@ -10,6 +10,7 @@ from plyer import notification
 from PyQt5.QtWidgets import QSystemTrayIcon, QApplication, QMenu
 from PyQt5.QtGui import QIcon
 
+
 # Weather API variables
 api_key = "WIAJBr3YssQyD8C5OGlKmp3ek0OXZtgL"
 country_code = "DE"
@@ -83,7 +84,6 @@ def Notification(title, message):
     )
 
 
-
 def mainloop():
     key = getLocation(country_code, city)
 
@@ -112,32 +112,12 @@ def systray():
     app.exec()
 
 
-
 def main():
     t1 = threading.Thread(target=mainloop)
     t2 = threading.Thread(target=systray)
 
     t1.start()
     t2.start()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 if __name__ == "__main__":
     main()
