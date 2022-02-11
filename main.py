@@ -12,7 +12,7 @@ from PyQt5.QtGui import QIcon
 
 
 # Weather API variables
-api_key = "WIAJBr3YssQyD8C5OGlKmp3ek0OXZtgL"
+api_key = "INSERT_API_KEY"
 country_code = "DE"
 city = "Marburg"
 
